@@ -15,7 +15,7 @@ export class FeedbackOptions extends Component {
   }
 }
 
-FeedbackOptions.proptypes = {
+FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.oneOf(['good', 'neutral', 'bad'])
   ).isRequired,
