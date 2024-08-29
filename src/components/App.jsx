@@ -21,14 +21,14 @@ export class App extends Component {
       const total = good + neutral + bad;
       const percentage = (good / total) * 100;
 
-      isNaN(percentage) ? 0 : Math.round(percentage);
+      
 
-    //   if (isNaN(percentage)) {
-    //       return 0;
-    //   }
-    //   else {
-    //       return Math.round(percentage);
-    //   }
+      if (isNaN(percentage)) {
+          return 0;
+      }
+      else {
+          return Math.round(percentage);
+      }
       
   }
   
