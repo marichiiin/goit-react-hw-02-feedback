@@ -9,6 +9,6 @@ export class Notification extends Component {
     }
 }
 
-Notification.prototypes = {
+Notification.propTypes = {
     message: PropTypes.string.isRequired,
 };
